@@ -14,7 +14,7 @@ Development: https://github.com/raphaelquast/EOmaps
 Documentation: https://eomaps.readthedocs.io/
 
 EOmaps is a python library to simplify the creation of interactive
-maps (using only a pandas.DataFrame as input)!
+maps (A pandas.DataFrame is all you need as input)!
 
 Many pre-defined callback functions are available to execute tasks
 (add annotations/markers, swipe layers etc.), when you click on the map.

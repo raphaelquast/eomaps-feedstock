@@ -1,5 +1,5 @@
 {% set name = "EOmaps" %}
-{% set version = "2.4.1" %}
+{% set version = "3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EOmaps-{{ version }}.tar.gz
-  sha256: 5d59e2ed4f2e8b05d3c557031c31b2ff65e8e68aa9a74a0051187379469987ca
+  sha256: acbcb77ea4e71408f1b131ade68f5fc055ad2bc499c7262ee14b742d0eb2baad
 
 build:
   number: 0
@@ -50,16 +50,15 @@ about:
   license_file: LICENSE
 
   description: |
-    EOmaps is a python library to simplify the creation of interactive
-    maps (A pandas.DataFrame is all you need as input)!
+    EOmaps is a python library to simplify the creation of interactive maps.
+    
+    With a few lines of code you can add WebMap services, annotations, markers,
+    scalebars, overlays etc. to the plot.
     
     Many pre-defined callback functions are available to execute tasks
     (add annotations/markers, swipe layers etc.), when you click on the map.
     (custom callbacks are also supported!)
     
-    Interfaces to several WebMap services are available that can be added 
-    as base- or comparison-layers to the plot.
-       
     Check the documentation for more details & examples!
     
   doc_url: https://eomaps.readthedocs.io/

@@ -1,11 +1,11 @@
-About eomaps
-============
+About eomaps-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eomaps-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/raphaelquast/EOmaps
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eomaps-feedstock/blob/main/LICENSE.txt)
 
 Summary: A library to create interactive maps of geographical datasets.
 

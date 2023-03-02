@@ -1,5 +1,5 @@
 {% set name = "EOmaps" %}
-{% set version = "6.0.3" %}
+{% set version = "6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EOmaps-{{ version }}.tar.gz
-  sha256: dc87c063821d3f274a0efa96034d9462ad21a9f7134f3d849641db13a9c6004e
+  sha256: 0f516dd200456edf90e61ecf6d0e910223b23fcd873e6c866ac5564f8cf7a39a
 build:
   number: 0
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - python >=3.6
   run:
     - python >=3.6
-    - numpy
+    - numpy <1.24 # check progress of https://github.com/numba/numba/pull/8691
     - scipy
     - pandas
     - matplotlib >=3.4

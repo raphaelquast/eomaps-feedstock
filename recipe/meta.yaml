@@ -9,9 +9,11 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EOmaps-{{ version }}.tar.gz
   sha256: b3c15f4dd2272c3c97e5bbcc1f4fcd2a6dffcb632a908d66194b0792dcf882d3
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - eomaps = eomaps.scripts.open:cli
 
 requirements:
   host:

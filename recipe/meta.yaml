@@ -1,5 +1,5 @@
 {% set name = "EOmaps" %}
-{% set version = "7.1" %}
+{% set version = "7.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EOmaps-{{ version }}.tar.gz
-  sha256: d27b67bd04412f6b3c277af9644f62bb2d75ee7b02f9058ed3c30b13a8dff009
+  sha256: df2471eed42a1d334a9bdd00b82abee7b5206100947cacd494f52a4cc9affeb0
 build:
   number: 0
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - numpy
     - scipy
     - pandas
-    - matplotlib >=3.4
+    - matplotlib >=3.6
     - cartopy >=0.20.0
     - descartes
     - mapclassify

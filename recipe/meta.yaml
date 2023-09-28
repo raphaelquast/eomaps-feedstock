@@ -1,5 +1,5 @@
 {% set name = "EOmaps" %}
-{% set version = "7.1.1" %}
+{% set version = "7.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EOmaps-{{ version }}.tar.gz
-  sha256: df2471eed42a1d334a9bdd00b82abee7b5206100947cacd494f52a4cc9affeb0
+  sha256: 355809db7230b7bed7a14def8925920d93adb3c0a03e1e014486e16577259049
 build:
   number: 0
   noarch: python

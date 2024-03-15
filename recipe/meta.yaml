@@ -1,13 +1,13 @@
-{% set name = "EOmaps" %}
-{% set version = "7.3.3" %}
+{% set name = "eomaps" %}
+{% set version = "8.0.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/EOmaps-{{ version }}.tar.gz
-  sha256: 9a5a9e594edcfbec8a16c49a83b0bc352eaa58386e3ea7f14ba0cd1996ca5f7b
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eomaps-{{ version }}.tar.gz
+  sha256: aee706ebb10001c4f391dca4ce4515ecf627990d8de594d15ad5196c8e30fb82
 build:
   number: 0
   noarch: python
@@ -18,25 +18,23 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
+    - python >=3.8
     - numpy
     - scipy
-    - pandas
-    - matplotlib >=3.6
+    - matplotlib >=3.4
     - cartopy >=0.20.0
     - descartes
-    - mapclassify
     - pyproj
-    - pyepsg
+    - packaging
+    - click
+    - pandas
     - geopandas
+    - mapclassify
+    - datashader
     - owslib
     - requests
-    - xmltodict
-    - cairosvg
-    - datashader
-    - packaging
 
 test:
   imports:
@@ -48,20 +46,30 @@ test:
 
 about:
   home: https://github.com/raphaelquast/EOmaps
-  summary: A library to create interactive maps of geographical datasets.
-  license: GPL-2.0-or-later
+  summary: A python package to create interactive maps of geographical datasets.
+  license: BSD-3-Clause
   license_file: LICENSE
 
   description: |
-    EOmaps is a python library to simplify the creation of interactive maps.
+    EOmaps is a python package to visualize and analyze geographical datasets.
 
-    With a few lines of code you can add WebMap services, annotations, markers,
-    scalebars, overlays etc. to the plot.
+    It aims to provide a comprehensive, flexible, well-documented and easy-to-use API 
+    to create publication-ready maps that can directly be used for interactive data analysis. 
 
-    Many pre-defined callback functions are available to execute tasks
-    (add annotations/markers, swipe layers etc.), when you click on the map.
-    (custom callbacks are also supported!) 
+    EOmaps is built on top of matplotlib and cartopy and integrates well with the scientific 
+    python infrastructure (e.g., numpy, pandas, geopandas, xarray etc.), allowing you to 
+    visualize point-, raster- or vector-datasets provided in almost any format you can imagine, 
+    no matter if you're dealing with just a few unsorted datapoints or multi-dimensional stacks 
+    of global high-resolution datasets.
 
+    Figures created with EOmaps are multi-layered, so you can (transparently) overlay and 
+    interactively compare your datasets with ease. With the accompanying GUI widget, you can 
+    quickly switch layers, change the layout, examine the large collection of features and 
+    web-map services, and explore the capabilities of EOmaps. Once you're map is ready, you 
+    can export it as high-resolution image or vector-graphic for further editing. 
+    Leveraging the powers of matplotlib, you can also embed interactive maps in 
+    Jupyter Notebooks, on a webpage or in GUI frameworks like Qt, tkinter etc..
+    
     Check the documentation for more details & examples!
 
   doc_url: https://eomaps.readthedocs.io/

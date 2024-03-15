@@ -5,22 +5,32 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eomaps-feedstoc
 
 Home: https://github.com/raphaelquast/EOmaps
 
-Package license: GPL-2.0-or-later
+Package license: BSD-3-Clause
 
-Summary: A library to create interactive maps of geographical datasets.
+Summary: A python package to create interactive maps of geographical datasets.
 
 Development: https://github.com/raphaelquast/EOmaps
 
 Documentation: https://eomaps.readthedocs.io/
 
-EOmaps is a python library to simplify the creation of interactive maps.
+EOmaps is a python package to visualize and analyze geographical datasets.
 
-With a few lines of code you can add WebMap services, annotations, markers,
-scalebars, overlays etc. to the plot.
+It aims to provide a comprehensive, flexible, well-documented and easy-to-use API
+to create publication-ready maps that can directly be used for interactive data analysis.
 
-Many pre-defined callback functions are available to execute tasks
-(add annotations/markers, swipe layers etc.), when you click on the map.
-(custom callbacks are also supported!)
+EOmaps is built on top of matplotlib and cartopy and integrates well with the scientific
+python infrastructure (e.g., numpy, pandas, geopandas, xarray etc.), allowing you to
+visualize point-, raster- or vector-datasets provided in almost any format you can imagine,
+no matter if you're dealing with just a few unsorted datapoints or multi-dimensional stacks
+of global high-resolution datasets.
+
+Figures created with EOmaps are multi-layered, so you can (transparently) overlay and
+interactively compare your datasets with ease. With the accompanying GUI widget, you can
+quickly switch layers, change the layout, examine the large collection of features and
+web-map services, and explore the capabilities of EOmaps. Once you're map is ready, you
+can export it as high-resolution image or vector-graphic for further editing.
+Leveraging the powers of matplotlib, you can also embed interactive maps in
+Jupyter Notebooks, on a webpage or in GUI frameworks like Qt, tkinter etc..
 
 Check the documentation for more details & examples!
 

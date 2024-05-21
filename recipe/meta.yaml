@@ -9,7 +9,7 @@ source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eomaps-{{ version }}.tar.gz
   sha256: ed42d5d6c1fcf06e520f758dd2b0b0a3c4890eca86c859953ebcde48154b9668
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -35,6 +35,7 @@ requirements:
     - datashader
     - owslib
     - requests
+    - qtpy
 
 test:
   imports:

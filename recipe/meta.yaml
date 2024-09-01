@@ -1,5 +1,5 @@
 {% set name = "eomaps" %}
-{% set version = "8.2.1" %}
+{% set version = "8.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,9 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/eomaps-{{ version }}.tar.gz
-  sha256: ed42d5d6c1fcf06e520f758dd2b0b0a3c4890eca86c859953ebcde48154b9668
+  sha256: a7018f55f77f4d3b70be28ba6139ec6877aed513d03aa595872d1d943f0afaf1
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -19,13 +19,13 @@ requirements:
   host:
     - pip
     - python >=3.8
+    - setuptools
   run:
     - python >=3.8
     - numpy
     - scipy
     - matplotlib >=3.4
     - cartopy >=0.20.0
-    - descartes
     - pyproj
     - packaging
     - click

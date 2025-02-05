@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/eomaps-{{ version }}.tar.gz
-  sha256: a7018f55f77f4d3b70be28ba6139ec6877aed513d03aa595872d1d943f0afaf1
+  sha256: 6a029c08d187550713f8f0dd5a71a26cc1589bd3b474808b5a2e2b39c1b29560
 build:
   number: 0
   noarch: python

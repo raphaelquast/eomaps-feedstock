@@ -1,5 +1,5 @@
 {% set name = "eomaps" %}
-{% set version = "8.3.2" %}
+{% set version = "8.3.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/eomaps-{{ version }}.tar.gz
-  sha256: 6a029c08d187550713f8f0dd5a71a26cc1589bd3b474808b5a2e2b39c1b29560
+  sha256: ee26c6dee74d35268376674b995648f40ea933d48b247b682ce9caf2a3c37248
 build:
   number: 0
   noarch: python
@@ -71,7 +71,7 @@ about:
     can export it as high-resolution image or vector-graphic for further editing. 
     Leveraging the powers of matplotlib, you can also embed interactive maps in 
     Jupyter Notebooks, on a webpage or in GUI frameworks like Qt, tkinter etc..
-    
+
     Check the documentation for more details & examples!
 
   doc_url: https://eomaps.readthedocs.io/
